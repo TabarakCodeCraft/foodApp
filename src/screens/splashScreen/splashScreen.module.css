@@ -1,0 +1,40 @@
+.page {
+    max-width: 450px;
+    margin: auto;
+    height: 100vh;
+    background: #F5CB58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logoSplash {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+
+}
+
+.span {
+    color: #FF642F;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(26px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
