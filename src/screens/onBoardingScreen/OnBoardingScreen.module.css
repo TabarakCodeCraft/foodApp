@@ -1,0 +1,8 @@
+.page{
+    max-width: 450px;
+    margin: auto;
+    height: 100vh;
+    background: #F5CB58;
+    display: flex;
+    justify-content: center;
+}
