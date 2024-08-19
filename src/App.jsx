@@ -16,11 +16,10 @@ function App() {
 
 
   return (
-    <>
+
     showSplash ? <SplashScreen /> : <WellcomeScreen />
 
-    {/* <OnBoardingScreen /> */}
-    </>
+
 
   );
 }

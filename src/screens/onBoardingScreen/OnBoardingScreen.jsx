@@ -1,12 +1,13 @@
 import React from 'react';
 import style from "../onBoardingScreen/OnBoardingScreen.module.css";
+import img from "../../assets/image2.png";
 
 
 const OnBoardingScreen = () => {
     return (
         <div className={style.page}> 
-            This is my OnBoardingScreen...
-        </div>
+        <img src={img} className={style.img} />
+\        </div>
     );
 }
 

@@ -1,4 +1,4 @@
-import React, {Link} from 'react';
+import React from 'react';
 import style from "../welcomeScreen/welcomeScreen.module.css";
 import logo from "../../assets/welcome.svg";
 
