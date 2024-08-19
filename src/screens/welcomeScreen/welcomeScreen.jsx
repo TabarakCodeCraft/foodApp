@@ -9,7 +9,7 @@ const WellcomeScreen = () => {
             <h1 className={style.title}><span className={style.span}>YUM</span>QUICK</h1>
             <p className={style.paragraph}>Lorem ipsum dolor sit amet consectetur.
                 <br /> temporibus quos porro cumque commodi!</p>
-            <button className={style.btn1}> <Link>Log In</Link></button>
+            <button className={style.btn1}> Log In</button>
             <button className={style.btn2}>Sign Up</button>
 
         </div>
