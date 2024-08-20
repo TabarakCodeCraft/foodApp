@@ -6,3 +6,9 @@
     display: flex;
     justify-content: center;
 }
+.img{
+    margin-top: 30px;
+    height: 98vh;
+    width: 450px;
+    bottom: 0px;
+}

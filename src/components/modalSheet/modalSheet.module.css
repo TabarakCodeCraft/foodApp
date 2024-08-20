@@ -1,0 +1,52 @@
+.react-modal-sheet-container {
+    height: 370px !important;
+    background: #fff;
+    border-top-right-radius: 28px !important;
+    border-top-left-radius: 28px !important;
+    /* position: fixed !important; */
+
+}
+
+.Content {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 50px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: #E95322;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+
+.pr {
+    font-family: "Inter", sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.next {
+    width: 133px;
+    height: 44px;
+    background: #E95322;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 22px;
+    margin: auto;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}

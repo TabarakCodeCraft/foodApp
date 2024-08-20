@@ -17,9 +17,9 @@ function App() {
 
   return (
 
-    showSplash ? <SplashScreen /> : <WellcomeScreen />
+    // showSplash ? <SplashScreen /> : <WellcomeScreen />
 
-    // <OnBoardingScreen />
+    <OnBoardingScreen />
 
 
   );
