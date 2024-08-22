@@ -1,10 +1,10 @@
 .react-modal-sheet-container {
-    height: 330px !important;
+    height: 333px !important;
     background: #fff;
     border-top-right-radius: 28px !important;
     border-top-left-radius: 28px !important;
     position: fixed !important;
-    top: 58%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
@@ -21,7 +21,6 @@
     opacity: 0;
     transform: translateY(20px);
     animation: slideUpFadeIn 1s ease-in-out forwards;
-    margin-top: 0px;
     top: 0px;
 }
 

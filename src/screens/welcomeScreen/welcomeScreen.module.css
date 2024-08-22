@@ -34,6 +34,8 @@
     color: #fff;
     margin-top: 20px;
     line-height: 22px;
+    font-size: 16px;
+    font-weight: 600;
     animation: fadeInUp 1.5s ease-in-out forwards;
 
 }
@@ -70,6 +72,7 @@
         opacity: 0;
         transform: translateY(26px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -80,6 +83,7 @@
     0% {
         transform: scale(0.8);
     }
+
     100% {
         transform: scale(1);
     }

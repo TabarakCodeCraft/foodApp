@@ -8,7 +8,7 @@
 }
 
 .img {
-    margin-top: 45px;
+    margin-top: 38px;
     height: 98vh;
     width: 450px;
     bottom: 0px;
@@ -16,7 +16,7 @@
 
 .skip {
     position: absolute;
-    margin-top: 65px;
+    margin-top: 60px;
     right: 30px;
     color: #fff;
     font-size: 22px;
@@ -27,6 +27,7 @@
 
 .IoIo {
     font-size: 25px;
+    margin-top: 2px;
 
 }
 .each-slide {
