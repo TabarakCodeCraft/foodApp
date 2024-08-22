@@ -6,12 +6,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     overflow: hidden;
 }
 
 .logoWelcome {
+    margin-top: 78%;
     height: 180px;
     width: 180px;
     margin-bottom: 10px;
@@ -22,7 +22,7 @@
     font-family: "Poppins", sans-serif;
     color: #fff;
     text-align: center;
-    animation: fadeInUp 1.5s ease-in-out 0.5s forwards;
+    animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
 .span {
@@ -34,7 +34,6 @@
     color: #fff;
     margin-top: 20px;
     line-height: 22px;
-    opacity: 0;
     animation: fadeInUp 1.5s ease-in-out 1s forwards;
 }
 
@@ -47,6 +46,8 @@
     font-size: 24px;
     opacity: 0;
     animation: fadeInUp 1.5s ease-in-out 1.5s forwards;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .btn1 {
@@ -57,6 +58,10 @@
 .btn2 {
     background: #F3E9B5;
     margin-top: 10px;
+}
+
+.btn1:hover, .btn2:hover {
+    transform: translateY(-5px);
 }
 
 @keyframes fadeInUp {
