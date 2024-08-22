@@ -4,13 +4,12 @@
     border-top-right-radius: 28px !important;
     border-top-left-radius: 28px !important;
     position: fixed !important;
-    top: 63%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
     opacity: 0;
     animation: fadeIn 1.5s forwards;
-    bottom: 0;
 }
 
 .Content {
@@ -51,7 +50,7 @@
 .icon {
     width: 40px;
     height: 45px;
-    margin-top: -50px;
+    margin-top: -30px;
     margin-bottom: 8px;
 }
 
@@ -60,7 +59,7 @@
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 700px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 
 }
 
@@ -76,6 +75,7 @@
 .stepper {
     color: #E95322;
     margin-top: -15px;
+    margin-bottom: -10px;
 }
 
 .next {
@@ -89,4 +89,5 @@
     font-size: 20px;
     font-weight: 300;
     cursor: pointer;
+    margin-top: -8px;
 }
