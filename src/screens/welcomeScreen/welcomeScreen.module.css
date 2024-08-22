@@ -34,7 +34,8 @@
     color: #fff;
     margin-top: 20px;
     line-height: 22px;
-    animation: fadeInUp 1.5s ease-in-out 1s forwards;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+
 }
 
 .btn1, .btn2 {

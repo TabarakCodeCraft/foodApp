@@ -31,6 +31,7 @@ function MyModal({ isOpen, currentSlide, handleNext }) {
         <Sheet isOpen={isOpen} disableDrag={true}>
             <Sheet.Container className={style['react-modal-sheet-container']}>
                 <Sheet.Content className={style.Content}>
+                    
                     <img src={icon} className={style.icon} alt="icon" />
                     <h1 className={style.text}>{text}</h1>
                     <p className={style.pr}>
