@@ -1,23 +1,69 @@
 import React, { useState } from 'react';
-import style from "../onBoardingScreen/OnBoardingScreen.module.css";
-import img1 from "../../assets/image2.png";
-import im2 from "../../assets/image.png";
-import im3 from "../../assets/image3.png";
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import style from './OnBoardingScreen.module.css';
+import { IoIosArrowForward } from 'react-icons/io';
+import MyModal from '../../components/modalSheet/modalSheet';
+import image1 from "../../assets/image.png";
+import image2 from "../../assets/image2.png";
+import image3 from "../../assets/image3.png";
 
-
-import MyModal from "../../components/modalSheet/modalSheet";
+const images = [
+  {
+    label: 'Image 1',
+    imgPath: image2,
+  },
+  {
+    label: 'Image 2',
+    imgPath: image1,
+  },
+  {
+    label: 'Image 3',
+    imgPath: image3,
+  },
+];
 
 const OnBoardingScreen = () => {
-    const [isModalOpen, setModalOpen] = useState(true);
-    const img = [img1, im2, im3];
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isModalOpen, setModalOpen] = useState(true);
 
+  const handleNext = () => {
+    if (currentSlide < images.length - 1) {
+      setCurrentSlide(currentSlide + 1);
+    } else {
+      setModalOpen(false);
+    }
+  };
 
-    return (
-        <div className={style.page}>
-            <img src={img1} className={style.img} />
-            <MyModal isOpen={isModalOpen} setOpen={setModalOpen} />
-        </div>
-    );
-}
+  return (
+    <div className={style.page}>
+      <SwitchTransition>
+        <CSSTransition
+          key={currentSlide}
+          addEndListener={(node, done) => {
+            node.addEventListener("transitionend", done, false);
+          }}
+          classNames={{
+            enter: style.fadeEnter,
+            enterActive: style.fadeEnterActive,
+            exit: style.fadeExit,
+            exitActive: style.fadeExitActive,
+          }}
+        >
+          <img src={images[currentSlide].imgPath} className={style.img} alt="Onboarding" />
+        </CSSTransition>
+      </SwitchTransition>
+      <div className={style.skip}>
+        <p onClick={handleNext}>Skip</p>
+        <IoIosArrowForward className={style.IoIo} />
+      </div>
+      <MyModal
+        isOpen={isModalOpen}
+        currentSlide={currentSlide}
+        setOpen={setModalOpen}
+        handleNext={handleNext}
+      />
+    </div>
+  );
+};
 
 export default OnBoardingScreen;

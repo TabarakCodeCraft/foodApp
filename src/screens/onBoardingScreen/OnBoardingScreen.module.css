@@ -1,4 +1,4 @@
-.page{
+.page {
     max-width: 450px;
     margin: auto;
     height: 100vh;
@@ -6,9 +6,52 @@
     display: flex;
     justify-content: center;
 }
-.img{
-    margin-top: 30px;
+
+.img {
+    margin-top: 45px;
     height: 98vh;
     width: 450px;
     bottom: 0px;
+}
+
+.skip {
+    position: absolute;
+    margin-top: 65px;
+    right: 30px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 6px;
+}
+
+.IoIo {
+    font-size: 25px;
+
+}
+.each-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fadeEnter {
+    opacity: 1;
+    /* transform: translateX(100%); */
+}
+
+.fadeEnterActive {
+    opacity: 1;
+    /* transform: translateX(0); */
+    transition: opacity 500ms, transform 300ms;
+}
+
+.fadeExit {
+    opacity: 1;
+    transform: translateX(1);
+}
+
+.fadeExitActive {
+    opacity: 0;
+    /* transform: translateX(-100%); */
+    transition: opacity 300ms, transform 300ms;
 }
