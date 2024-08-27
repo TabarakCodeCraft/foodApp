@@ -1,0 +1,26 @@
+.botomBar {
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    height: 60px;
+    background: #E95322;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.allIcons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}

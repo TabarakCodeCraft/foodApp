@@ -4,6 +4,8 @@ import "./App.css"
 import SplashScreen from "./screens/splashScreen/splashScreen";
 import WellcomeScreen from "./screens/welcomeScreen/welcomeScreen";
 import OnBoardingScreen from "./screens/onBoardingScreen/OnBoardingScreen";
+import LoginScreen from "./screens/loginScreen/loginScreen";
+import SingUpScreen from "./screens/singUpScreen/singUpScreen";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -28,6 +30,8 @@ function App() {
                 <Route path="/" element={<Navigate replace to="/welcome" />} />
                 <Route path="/welcome" element={<WellcomeScreen />} />
                 <Route path="/onboarding" element={<OnBoardingScreen />} />
+                <Route path="/login" element={<LoginScreen />} />
+                <Route path="/signup" element={<SingUpScreen />} />
               </>
             )
           }

@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import style from './OnBoardingScreen.module.css';
 import { IoIosArrowForward } from 'react-icons/io';
-import MyModal from '../../components/modalSheet/modalSheet';
+import MyModal from '../../components/modalGetStarted/modalSheet';
 import image1 from "../../assets/image.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
+
+import { useNavigate } from 'react-router-dom';
 
 const images = [
   {
@@ -25,6 +27,7 @@ const images = [
 const OnBoardingScreen = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isModalOpen, setModalOpen] = useState(true);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     if (currentSlide < images.length - 1) {
