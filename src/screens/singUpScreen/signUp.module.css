@@ -1,0 +1,28 @@
+.page {
+    max-width: 450px;
+    margin: auto;
+    height: 100vh;
+    background: #F5CB58;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NewAccount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    color: #fff;
+}
+
+.IoChevronBack {
+    font-size: 30px;
+    color: #E95322;
+}
+
+.accountText {
+    margin-right: 2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
