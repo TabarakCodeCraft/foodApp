@@ -11,7 +11,7 @@ const WellcomeScreen = () => {
     }
     return (
         <div className={style.page}>
-            hhhhhhhhhhhhh
+            
             <img src={logo} className={style.logoWelcome} />
             <h1 className={style.title}><span className={style.span}>YUM</span>QUICK</h1>
             <p className={style.paragraph}>Lorem ipsum dolor sit amet consectetur.

@@ -3,17 +3,18 @@
     right: 0;
     left: 0;
     bottom: 0;
-    position: fixed;
+    position: fixed; /* Fixed at the bottom */
     height: 60px;
     background: #E95322;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    z-index: 1000; /* Ensure it's below the modal */
 }
+
 
 .allIcons {
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
     margin-top: 16px;
     margin-left: 20px;

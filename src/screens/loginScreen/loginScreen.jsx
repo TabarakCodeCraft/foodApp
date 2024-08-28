@@ -11,7 +11,7 @@ const LoginScreen = () => {
                 <IoChevronBack className={style.IoChevronBack} />
                 <h1 className={style.loginText}>Log In</h1>
             </div>
-            {/* <ModalLogin /> */}
+            <ModalLogin />
             <BotomBar />
         </div>
     );
